@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+
+body, html {
+    font-family: 'Jura', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background-image: url(/img/sfondo.jpeg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.header > img {
+    width: 200px;
+}
+
+#titolo {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.container-bottoni {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.div-bottoni {
+    display: flex;
+    background-color: rgba(176, 5, 8, 0.7);
+    margin: 0px 25px;
+    border-radius: 15px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.bottone {
+    color:white;
+    background-color: rgba(176, 5, 8, 0.4);
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .container-bottoni {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .container-bottoni {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}

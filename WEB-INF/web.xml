@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+     version="2.5">
+     
+    <servlet>
+       <servlet-name>listaGiudici</servlet-name>
+       <servlet-class>listaGiudici</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+       <servlet-name>listaGiudici</servlet-name>
+       <url-pattern>/listaGiudici</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>luogoNascitaGiudici</servlet-name>
+       <servlet-class>luogoNascitaGiudici</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+       <servlet-name>luogoNascitaGiudici</servlet-name>
+       <url-pattern>/luogoNascitaGiudici</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+       <servlet-name>cancellaGiudice</servlet-name>
+       <servlet-class>cancellaGiudice</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+       <servlet-name>cancellaGiudice</servlet-name>
+       <url-pattern>/cancellaGiudice</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>inserisciGiudice</servlet-name>
+       <servlet-class>inserisciGiudice</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+       <servlet-name>inserisciGiudice</servlet-name>
+       <url-pattern>/inserisciGiudice</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>listaGiudicAnni</servlet-name>
+       <servlet-class>listaGiudiciAnni</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+       <servlet-name>listaGiudicAnni</servlet-name>
+       <url-pattern>/listaGiudiciAnni</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>cambiaLuogo</servlet-name>
+       <servlet-class>cambiaLuogo</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+       <servlet-name>cambiaLuogo</servlet-name>
+       <url-pattern>/cambiaLuogo</url-pattern>
+    </servlet-mapping>
+</web-app>
+
